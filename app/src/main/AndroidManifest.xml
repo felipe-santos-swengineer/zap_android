@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="br.com.ufc.zap_android">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher_zap"
+        android:label="Fake Whatsapp"
+        android:roundIcon="@mipmap/ic_launcher_zap_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MaterialComponents.DayNight.DarkActionBar">
+        <activity android:name=".gp_registro"></activity>
+        <activity android:name=".chat_gp" />
+        <activity
+            android:name=".chat"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".messages" />
+        </activity>
+        <activity
+            android:name=".contatos"
+            android:screenOrientation="portrait">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".messages" />
+        </activity>
+        <activity
+            android:name=".login"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".registro"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".messages"
+            android:screenOrientation="portrait">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

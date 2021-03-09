@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/teal_700"
+    tools:context=".login">
+
+
+    <EditText
+        android:id="@+id/edt_email"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:background="@drawable/bg_edt_text_rounded"
+        android:ems="10"
+        android:hint="Insira seu email aqui"
+        android:inputType="textEmailAddress"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+
+    <EditText
+        android:id="@+id/edt_password"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="8dp"
+        android:ems="10"
+        android:hint="Insira sua senha aqui"
+        android:background="@drawable/bg_edt_text_rounded"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        app:layout_constraintEnd_toEndOf="@+id/edt_email"
+        app:layout_constraintStart_toStartOf="@+id/edt_email"
+        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="32dp"
+        android:background="@drawable/bg_edt_text_rounded"
+        android:backgroundTint="@color/green"
+        android:onClick="OnclickbtnCEntrar"
+        android:text="Entrar"
+        android:textColor="@color/design_default_color_background"
+        app:layout_constraintEnd_toEndOf="@+id/edt_password"
+        app:layout_constraintStart_toStartOf="@+id/edt_password"
+        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+
+    <TextView
+        android:id="@+id/text_create_acc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="OnClickBtnCadastrar"
+        android:text="Não tem uma conta? Crie aqui"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="@+id/btn_login"
+        app:layout_constraintStart_toStartOf="@+id/btn_login"
+        app:layout_constraintTop_toBottomOf="@+id/btn_login" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="181dp"
+        android:layout_height="215dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@mipmap/ic_launcher_zap_foreground" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
