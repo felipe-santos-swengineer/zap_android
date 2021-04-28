@@ -1,2 +1,2 @@
 # zap_android
- Chat entre usuarios como no whatsapp
+ Chat entre usuarios e em grupo como no whatsapp
